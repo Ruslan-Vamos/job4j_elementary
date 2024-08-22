@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b8b63a3-e558-4720-a7f2-1a95c6107142" name="Changes" comment="3.3. Фиксация изменений на github [#243564 #31728]">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/Multiple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/StudentInfo.java" afterDir="false" />
+    <list default="true" id="0b8b63a3-e558-4720-a7f2-1a95c6107142" name="Changes" comment="4.1. Разбор первой программы. [#159033 #31735]">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/job4j/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/job4j/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/job4j/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Confirmation&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Multiple">
+  <component name="RunManager" selected="Application.Info">
+    <configuration name="Info" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.Info" />
+      <module name="elementary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.job4j.Main" />
       <module name="elementary" />
@@ -115,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Info" />
         <item itemvalue="Application.Multiple" />
         <item itemvalue="Application.StudentInfo" />
         <item itemvalue="Application.Main" />
@@ -151,12 +163,20 @@
       <option name="project" value="LOCAL" />
       <updated>1724360019426</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4.1. Разбор первой программы. [#159033 #31735]">
+      <created>1724366761878</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724366761878</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3.2. Загрузка файлов на github [#243562 #31736]" />
     <MESSAGE value="3.3. Фиксация изменений на github [#243564 #31728]" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.3. Фиксация изменений на github [#243564 #31728]" />
+    <MESSAGE value="4.1. Разбор первой программы. [#159033 #31735]" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.1. Разбор первой программы. [#159033 #31735]" />
   </component>
 </project>
