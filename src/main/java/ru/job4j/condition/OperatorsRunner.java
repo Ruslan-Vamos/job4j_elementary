@@ -21,18 +21,7 @@ public class OperatorsRunner {
         second = 7;
         second %= first;
         System.out.println("Result remainder after division 7 by 2: " + second);
-        int i = 1234;
-        int thousands = i / 1000;
-        int hundreds = i % 1000 / 100;
-        int tens = i % 100 / 10;
-        int ones = i % 10;
-        System.out.println(
-                "Thousands: " + thousands
-                + ", hundreds: " + hundreds
-                + ", tens: " + tens
-                + ", ones: " + ones
-        );
-        i = 100;
+        int i = 100;
         System.out.println("Before increment: " + i);
         i++;
         System.out.println("After increment: " + i);
@@ -48,6 +37,5 @@ public class OperatorsRunner {
         System.out.println("Use preincrement: " + ++i);
         System.out.println("Before predecrement: " + i);
         System.out.println("Use predecrement: " + --i);
-
     }
 }
