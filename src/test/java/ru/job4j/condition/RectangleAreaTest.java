@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.*;
 class RectangleAreaTest {
 
     @Test
-    void whenP6K2ThenSquare2() {
+    void whenP6K2ThenSquare2() throws IllegalAccessException {
         double p = 6;
         double k = 2;
         double expected = 2;
@@ -16,7 +16,7 @@ class RectangleAreaTest {
     }
 
     @Test
-    void whenP8K3ThenSquare3() {
+    void whenP8K3ThenSquare3() throws IllegalAccessException {
         double p = 8;
         double k = 3;
         double expected = 3;
@@ -25,7 +25,7 @@ class RectangleAreaTest {
     }
 
     @Test
-    void whenP12K2ThenSquare8() {
+    void whenP12K2ThenSquare8() throws IllegalAccessException {
         double p = 12;
         double k = 2;
         double expected = 8;
