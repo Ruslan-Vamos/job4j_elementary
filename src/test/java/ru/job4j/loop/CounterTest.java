@@ -34,7 +34,7 @@ class CounterTest {
     }
 
     @Test
-    void when1To1Then1() {
+    void whenSum1To1Then1() {
         int start = 1;
         int finish = 1;
         int expected = 1;
@@ -43,7 +43,7 @@ class CounterTest {
     }
 
     @Test
-    void when2To1Then0() {
+    void whenSum2To1Then0() {
         int start = 2;
         int finish = 1;
         int expected = 0;
@@ -52,11 +52,56 @@ class CounterTest {
     }
 
     @Test
-    void whenMinus2To1ThenMinus2() {
+    void whenSumMinus2To1ThenMinus2() {
         int start = -2;
         int finish = 1;
         int expected = -2;
         int fact = Counter.sum(start, finish);
+        assertThat(fact).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEven0To5Then6() {
+        int start = 0;
+        int finish = 5;
+        int expected = 6;
+        int fact = Counter.sumByEven(start, finish);
+        assertThat(fact).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEven3To8Then18() {
+        int start = 3;
+        int finish = 8;
+        int expected = 18;
+        int fact = Counter.sumByEven(start, finish);
+        assertThat(fact).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEven4To8Then18() {
+        int start = 4;
+        int finish = 8;
+        int expected = 18;
+        int fact = Counter.sumByEven(start, finish);
+        assertThat(fact).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEven1To1Then0() {
+        int start = 1;
+        int finish = 1;
+        int expected = 0;
+        int fact = Counter.sumByEven(start, finish);
+        assertThat(fact).isEqualTo(expected);
+    }
+
+    @Test
+    void whenSumEvenMinus5To7Then6() {
+        int start = -5;
+        int finish = 7;
+        int expected = 6;
+        int fact = Counter.sumByEven(start, finish);
         assertThat(fact).isEqualTo(expected);
     }
 }
