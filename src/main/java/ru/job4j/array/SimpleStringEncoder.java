@@ -5,19 +5,16 @@ public class SimpleStringEncoder {
     public static String encode(String input) {
         String result = "";
         int counter = 1;
+        char symbol = input.charAt(0);
         for (int i = 0; i < input.length(); i++) {
-            char symbol = input.charAt(i);
-            if (i < input.length() - 1 && symbol == input.charAt(i + 1)) {
+            if (input.length() > 1 && symbol == input.charAt(i) && i > 0) {
                 counter++;
-            } else if (i < input.length() - 1 && counter > 1 && symbol != input.charAt(i + 1)) {
-                result += String.valueOf(symbol) + counter;
-                counter = 1;
-            } else if (counter > 1 && i == input.length() - 1) {
-                result += String.valueOf(symbol) + counter;
             } else {
-                result = result + symbol;
+                symbol = input.charAt(i);
+                result += counter == 1 ? String.valueOf(symbol) : counter + String.valueOf(input.charAt(i));
+                counter = 1;
             }
         }
-        return result;
+        return counter > 1 ? result + counter : result;
     }
 }
